@@ -12,8 +12,11 @@ const Home: NextPage = () => {
 				/>
 			</Head>
 			<div className='container mx-auto'>
-				<span>Tobias Rosa</span>
-				<a href='#'>teste</a>
+				<div className='container px-6 pt-8 max-w-xl mx-auto'>
+					<p className='text-lg'>Hello! I am</p>
+					<h1 className='text-5xl font-bold text-center py-2'>Tobias Rosa</h1>
+					<h2 className='text-right text-xl italic'>a Frontend Engineer</h2>
+				</div>
 			</div>
 		</>
 	);
