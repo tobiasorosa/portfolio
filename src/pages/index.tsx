@@ -1,4 +1,6 @@
+import React from 'react';
 import type { NextPage } from 'next';
+
 import Head from 'next/head';
 import SkillsSection from 'src/components/SkillsSection/SkillsSection';
 

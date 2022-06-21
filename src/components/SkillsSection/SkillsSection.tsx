@@ -1,9 +1,10 @@
+import React from 'react';
 import CardCarousel from './CardCarousel';
 import { frontendSkills } from '/src/data/skills';
 
-const SkillsSection = () => {
+const SkillsSection: React.FC = () => {
 	return (
-		<div className='columns-3 mt-32'>
+		<div className='flex flex-col'>
 			<div>
 				<CardCarousel data={frontendSkills} />
 				{/* <p className='text-center'>SASS</p>

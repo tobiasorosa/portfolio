@@ -1,3 +1,4 @@
+import React from 'react';
 import Image from 'next/image';
 
 export interface ISkillCardProps {
@@ -6,7 +7,11 @@ export interface ISkillCardProps {
 	description: string;
 }
 
-const SkillCard = ({ name, image, description }: ISkillCardProps) => {
+const SkillCard: React.FC<ISkillCardProps> = ({
+	name,
+	image,
+	description,
+}: ISkillCardProps) => {
 	return (
 		<div className='max-w-xs'>
 			<div className='flex justify-center'>
