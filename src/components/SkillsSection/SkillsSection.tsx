@@ -3,20 +3,22 @@ import CardCarousel from './CardCarousel';
 import { frontendSkills } from '/src/data/skills';
 
 const SkillsSection: React.FC = () => {
+	const frontEndSkillsCount = Array.from(Array(frontendSkills.length).keys())
+
 	return (
 		<div className='flex flex-col'>
 			<div>
-				<CardCarousel data={frontendSkills} />
+				<CardCarousel cardsCount={frontEndSkillsCount} />
 				{/* <p className='text-center'>SASS</p>
 				<p className='text-center'>SEO</p> */}
 			</div>
 			<div>
-				<CardCarousel data={frontendSkills} />
+				{/* <CardCarousel cards={frontendSkills} /> */}
 				{/* <p className='text-center'>SASS</p>
 				<p className='text-center'>SEO</p> */}
 			</div>
 			<div>
-				<CardCarousel data={frontendSkills} />
+				{/* <CardCarousel cards={frontendSkills} /> */}
 				{/* <p className='text-center'>SASS</p>
 				<p className='text-center'>SEO</p> */}
 			</div>
