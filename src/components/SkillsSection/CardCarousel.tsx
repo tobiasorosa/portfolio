@@ -69,13 +69,22 @@ const CardCarousel: React.FC<ICarouselProps> = ({ cardsCount }: ICarouselProps) 
 
 	return (
 		<div className='flex flex-row align-center justify-center'>
-			<div className='mx-5' ref={emblaRef}>
-				{cardsCount.map((index) => (
-					<SkillCard index={index} key={index} />
-				))}
-			</div>
 			<PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
-      <NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
+			<div className='mx-5 overflow-hidden max-w-sm w-full' ref={emblaRef}>
+				<div className='flex select-none'>
+					{cardsCount.map(index => (
+						<div className='min-w-full relative' key={index}>
+							<div
+								className='relative h-190 flex items-center justify-center overflow-hidden origin-center'
+								style={{ transform: `scale(${scaleValues[index]})` }}
+							>
+								<SkillCard index={index} />
+							</div>
+						</div>
+					))}
+				</div>
+			</div>
+			<NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
 		</div>
 	);
 };
