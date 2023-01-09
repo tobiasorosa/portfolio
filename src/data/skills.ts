@@ -20,3 +20,7 @@ export const frontendSkills = [
 			'Redux is a powerful storage management package, built in order to make state containers inside your app, distributed accordingly to our needs, making the data more consistent.',
 	},
 ];
+
+export const backendSkills = [];
+
+export const architectureSkills = [];

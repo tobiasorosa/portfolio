@@ -1,26 +1,31 @@
 import React from 'react';
 import CardCarousel from './CardCarousel';
-import { frontendSkills } from '/src/data/skills';
+import {
+	architectureSkills,
+	backendSkills,
+	frontendSkills,
+} from '/src/data/skills';
 
 const SkillsSection: React.FC = () => {
-	const frontEndSkillsCount = Array.from(Array(frontendSkills.length).keys())
+	const architectureSkillsCount = Array.from(
+		Array(architectureSkills.length).keys()
+	);
+	const backEndSkillsCount = Array.from(Array(backendSkills.length).keys());
+	const frontEndSkillsCount = Array.from(Array(frontendSkills.length).keys());
 
 	return (
 		<div className='flex flex-col'>
 			<div>
-				<CardCarousel cardsCount={frontEndSkillsCount} />
-				{/* <p className='text-center'>SASS</p>
-				<p className='text-center'>SEO</p> */}
+				<CardCarousel cardsCount={frontEndSkillsCount} skill='frontend' />
 			</div>
 			<div>
-				{/* <CardCarousel cards={frontendSkills} /> */}
-				{/* <p className='text-center'>SASS</p>
-				<p className='text-center'>SEO</p> */}
+				<CardCarousel cardsCount={backEndSkillsCount} skill='backend' />
 			</div>
 			<div>
-				{/* <CardCarousel cards={frontendSkills} /> */}
-				{/* <p className='text-center'>SASS</p>
-				<p className='text-center'>SEO</p> */}
+				<CardCarousel
+					cardsCount={architectureSkillsCount}
+					skill='architecture'
+				/>
 			</div>
 			{/* <div>
 				<p className='text-center'>Typescript</p>

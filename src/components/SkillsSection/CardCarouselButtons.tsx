@@ -9,7 +9,9 @@ interface IButtonProps {
 
 export const PrevButton = ({ enabled, onClick }: IButtonProps) => (
 	<button
-		className='shadow-md	bg-amber-100 rounded-md w-8 h-8 my-auto touch-manipulation '
+		className={`shadow-md bg-light-blue rounded-md w-8 my-auto touch-manipulation ${
+			enabled ? '' : 'invisible'
+		}`}
 		onClick={onClick}
 		disabled={!enabled}
 	>
@@ -19,7 +21,9 @@ export const PrevButton = ({ enabled, onClick }: IButtonProps) => (
 
 export const NextButton = ({ enabled, onClick }: IButtonProps) => (
 	<button
-		className='shadow-lg	bg-amber-100 rounded-md w-8 h-8 my-auto touch-manipulation'
+		className={`shadow-lg bg-light-blue rounded-md w-8 my-auto touch-manipulation ${
+			enabled ? '' : 'invisible'
+		}`}
 		onClick={onClick}
 		disabled={!enabled}
 	>
