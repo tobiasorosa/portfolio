@@ -1,15 +1,9 @@
 import React from 'react';
 import CardCarousel from './CardCarousel';
-import {
-	architectureSkills,
-	backendSkills,
-	frontendSkills,
-} from '/src/data/skills';
+import { otherSkills, backendSkills, frontendSkills } from '/src/data/skills';
 
 const SkillsSection: React.FC = () => {
-	const architectureSkillsCount = Array.from(
-		Array(architectureSkills.length).keys()
-	);
+	const otherSkillsCount = Array.from(Array(otherSkills.length).keys());
 	const backEndSkillsCount = Array.from(Array(backendSkills.length).keys());
 	const frontEndSkillsCount = Array.from(Array(frontendSkills.length).keys());
 
@@ -22,10 +16,7 @@ const SkillsSection: React.FC = () => {
 				<CardCarousel cardsCount={backEndSkillsCount} skill='backend' />
 			</div>
 			<div>
-				<CardCarousel
-					cardsCount={architectureSkillsCount}
-					skill='architecture'
-				/>
+				<CardCarousel cardsCount={otherSkillsCount} skill='other' />
 			</div>
 			{/* <div>
 				<p className='text-center'>Typescript</p>

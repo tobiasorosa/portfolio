@@ -1,14 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
 import {
-	getArchitectureSkillsByIndex,
+	getOtherSkillsByIndex,
 	getBackendSkillsByIndex,
 	getFrontendSkillsByIndex,
 } from './getSkills';
 
 export interface ISkillCardProps {
 	index: number;
-	skillType: 'frontend' | 'backend' | 'architecture';
+	skillType: 'frontend' | 'backend' | 'other';
 }
 
 const SkillCard: React.FC<ISkillCardProps> = ({
@@ -20,7 +20,7 @@ const SkillCard: React.FC<ISkillCardProps> = ({
 			? getFrontendSkillsByIndex(index)
 			: skillType === 'backend'
 			? getBackendSkillsByIndex(index)
-			: getArchitectureSkillsByIndex(index);
+			: getOtherSkillsByIndex(index);
 
 	return (
 		<div className='max-w-xs'>

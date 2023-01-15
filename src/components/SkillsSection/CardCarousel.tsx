@@ -6,7 +6,7 @@ import { NextButton, PrevButton } from './CardCarouselButtons';
 
 interface ICarouselProps {
 	cardsCount: number[];
-	skill: 'frontend' | 'backend' | 'architecture';
+	skill: 'frontend' | 'backend' | 'other';
 }
 
 const SCALE_FACTOR = 3;
