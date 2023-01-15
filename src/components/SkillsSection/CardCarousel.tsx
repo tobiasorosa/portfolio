@@ -48,9 +48,9 @@ const CardCarousel: React.FC<ICarouselProps> = ({
 
 			if (engine.options.loop) {
 				engine.slideLooper.loopPoints.forEach(loopItem => {
-					const target = loopItem.getTarget();
-					if (index === loopItem.index && target !== 0) {
-						const sign = Math.sign(target);
+					const target = loopItem.target();
+					if (index === loopItem.index && target.get() !== 0) {
+						const sign = Math.sign(target.get());
 						if (sign === -1) diffToTarget = scrollSnap - (1 + scrollProgress);
 						if (sign === 1) diffToTarget = scrollSnap + (1 - scrollProgress);
 					}
