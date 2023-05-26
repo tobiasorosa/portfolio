@@ -11,7 +11,6 @@ const PersonalInfo = () => {
 					<Image
 						src={MyPhoto}
 						alt={'Profile photo'}
-						objectFit='cover'
 						style={{
 							maxHeight: '400px',
 							objectFit: 'cover',

@@ -3,7 +3,8 @@ import type { NextPage } from 'next';
 
 import Head from 'next/head';
 import SkillsSection from 'src/components/SkillsSection/SkillsSection';
-import PersonalInfo from '../components/PersonalInfo/PersonalInfo';
+import PersonalInfo from '../components/PersonalInfo';
+import Navbar from '../components/Navbar';
 
 const Home: NextPage = () => {
 	return (
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
 					content='A portfolio as a frontend developer focused on performance, SEO and UX.'
 				/>
 			</Head>
+			<Navbar />
 			<div className='container mx-auto'>
 				<div className='max-w-lg mx-auto mb-10'>
 					<div className='container px-6 pt-8 max-w-xl pb-4'>
