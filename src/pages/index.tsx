@@ -21,8 +21,8 @@ const Home: NextPage = () => {
 			<Navbar />
 			<div className='container mx-auto mt-20'>
 				<Header />
-				{/* <SkillCarousel /> */}
-				<SkillsSection />
+				<SkillCarousel />
+				{/* <SkillsSection /> */}
 				<PersonalInfo />
 			</div>
 		</>

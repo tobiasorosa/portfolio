@@ -18,6 +18,9 @@ module.exports = {
 				250: '2.50',
 				300: '3.00',
 			},
+			backdropBlur: {
+				5: '5px',
+			},
 		},
 	},
 	plugins: [],
