@@ -5,6 +5,8 @@ import Head from 'next/head';
 import SkillsSection from 'src/components/SkillsSection/SkillsSection';
 import PersonalInfo from '../components/PersonalInfo';
 import Navbar from '../components/Navbar';
+import Header from '../components/Header';
+import SkillCarousel from '../components/SkillsSection/SkillCarousel';
 
 const Home: NextPage = () => {
 	return (
@@ -17,22 +19,11 @@ const Home: NextPage = () => {
 				/>
 			</Head>
 			<Navbar />
-			<div className='container mx-auto'>
-				<div className='max-w-lg mx-auto mb-10'>
-					<div className='container px-6 pt-8 max-w-xl pb-4'>
-						<p className='text-lg'>Hello! I am</p>
-						<h1 className='text-5xl font-bold text-center py-2'>Tobias Rosa</h1>
-						<h2 className='text-right text-xl italic'>a Frontend Engineer</h2>
-					</div>
-					<div>
-						<p className='pt-8 sm:text-lg px-6 xs:text-sm'>
-							With experience in Next.js, Angular and more, I can make fast
-							websites with great SEO rankings.
-						</p>
-					</div>
-				</div>
-				<PersonalInfo />
+			<div className='container mx-auto mt-20'>
+				<Header />
+				{/* <SkillCarousel /> */}
 				<SkillsSection />
+				<PersonalInfo />
 			</div>
 		</>
 	);
