@@ -5,7 +5,7 @@ const Header = () => {
 	return (
 		<div id='home'>
 			<div className='w-full flex flex-col items-center justify-center py-10'>
-				<div className='w-36 h-36 rounded-full overflow-hidden'>
+				<div className='w-36 h-36 rounded-full overflow-hidden shadow-lg border-slate-700 border-2'>
 					<Image
 						src={MyPhoto}
 						alt={'Profile photo'}
