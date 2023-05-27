@@ -6,8 +6,8 @@ const SkillCarousel = () => {
 	const [clientX, setClientX] = useState(0);
 	const [scrollX, setScrollX] = useState(0);
 	const [isScrolling, setIsScrolling] = useState(false);
-
-	const ref = createRef();
+	
+	const ref = createRef<HTMLDivElement>();
 
 	const onMouseDown = (e: MouseEvent) => {
 		setIsScrolling(true);
@@ -19,7 +19,7 @@ const SkillCarousel = () => {
 	};
 
 	const onMouseMove = (e: MouseEvent) => {
-		if (isScrolling) {
+		if (isScrolling && ref.current !== null) {
 			ref.current.scrollLeft = scrollX + e.clientX - clientX;
 			setScrollX(scrollX + e.clientX - clientX);
 			setClientX(e.clientX);
