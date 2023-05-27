@@ -9,3 +9,6 @@ export * as ExpressIcon from './express-icon.png';
 export * as NetCoreIcon from './netcore-icon.png';
 export * as AzureIcon from './azure-icon.png';
 export * as AwsIcon from './aws-icon.png';
+export * as LinkedinIcon from './linkedin.svg';
+export * as InstagramIcon from './instagram.svg';
+export * as GithubIcon from './github.svg';

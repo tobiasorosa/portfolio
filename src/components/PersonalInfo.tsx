@@ -6,7 +6,7 @@ import Link from 'next/link';
 const PersonalInfo = () => {
 	return (
 		<div className='flex flex-col pt-12'>
-			<div className='flex flex-col w-full justify-between'>
+			<div className='flex flex-col w-full justify-between items-center lg:flex-row lg:items-start'>
 				<div className='max-w-md w-full relative pb-5'>
 					<Image
 						src={MyPhoto}

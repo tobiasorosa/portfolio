@@ -7,6 +7,7 @@ import PersonalInfo from '../components/PersonalInfo';
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
 import SkillCarousel from '../components/SkillsSection/SkillCarousel';
+import Footer from '../components/Footer';
 
 const Home: NextPage = () => {
 	return (
@@ -25,6 +26,7 @@ const Home: NextPage = () => {
 				{/* <SkillsSection /> */}
 				<PersonalInfo />
 			</div>
+			<Footer />
 		</>
 	);
 };
