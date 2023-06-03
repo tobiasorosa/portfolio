@@ -8,7 +8,7 @@ const Navbar = () => {
 				<a href='#skills' className='h-fit'>
 					Skills
 				</a>
-				<a href='#exp' className='h-fit'>
+				<a href='#experience' className='h-fit'>
 					Experience
 				</a>
 				<a href='#about' className='h-fit'>
