@@ -8,6 +8,7 @@ import Navbar from '../components/Navbar';
 import Header from '../components/Header';
 import SkillCarousel from '../components/SkillsSection/SkillCarousel';
 import Footer from '../components/Footer';
+import ExperienceMobile from '../components/Experience';
 
 const Home: NextPage = () => {
 	return (
@@ -25,6 +26,9 @@ const Home: NextPage = () => {
 				<SkillCarousel />
 				{/* <SkillsSection /> */}
 				<PersonalInfo />
+				<section id='experience'>
+					<ExperienceMobile />
+				</section>
 			</div>
 			<Footer />
 		</>
