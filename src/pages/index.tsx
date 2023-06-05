@@ -21,7 +21,7 @@ const Home: NextPage = () => {
 				/>
 			</Head>
 			<Navbar />
-			<div className='container mx-auto mt-20'>
+			<div className='max-w-3xl mx-auto mt-20'>
 				<Header />
 				<SkillCarousel />
 				{/* <SkillsSection /> */}

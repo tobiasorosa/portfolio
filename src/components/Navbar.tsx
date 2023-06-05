@@ -1,6 +1,6 @@
 const Navbar = () => {
 	return (
-		<nav className='w-full h-12 bg-gray-700 fixed top-0 left-0 shadow-md z-50'>
+		<nav className='w-full h-12 bg-[#141726] fixed top-0 left-0 shadow-md z-50'>
 			<div className='mx-auto h-full flex items-center justify-center gap-4'>
 				<a href='#home' className='h-fit'>
 					Home
